@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Де придбати алкоголь у Києві, Харкові, Дніпрі, Одесі, Львові">
+    <meta name="author" content="Андрій Газін">
+
+    <title>Алкогольна карта</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Base CSS for header and footer-->
+    <link href="css/template-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Алкогольна карта" />
+    <meta property="og:image" content="http://texty.org.ua/d/logo.png" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="http://texty.org.ua/d/alcomap/" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua" />
+    <meta property="twitter:account_id" content="49572937" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="http://texty.org.ua/d/alcomap/" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image:src" content="http://texty.org.ua/d/logo.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+
+    <!-- Other Meta Tags -->
+    <meta name="title" content="">
+    <meta name="description" content="">
+
+</head>
+<body>
+
+  <!-- First screen -->
+    <div class="firstScreen" style="background-image:url(img/cover.png);">
+
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-4  col-xs-4">
+            <a href="http://texty.org.ua"><img class="img-responsive logo" src="img/logo.png"></a>
+        </div>
+        <div class="col-lg-1 col-lg-offset-9 col-md-1 col-md-offset-9 col-sm-2 col-sm-offset-6 col-xs-2 col-xs-offset-6">
+          <div class="social-icons">
+            <a href="https://twitter.com/intent/tweet?text=http://texty.org.ua/d/alcomap/" class="share-btn"><i class="fa fa-twitter fa-fw fa-2x social-tw"></i></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://texty.org.ua/d/alcomap/" class="share-btn"><i class="fa fa-facebook fa-fw fa-2x social-fb"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 header">
+            <h1>Алкогольна карта</h1>
+            <p>
+              <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
+            </p>
+            <p class="caption">
+              Над проектом працював: <b>Андрій Газін</b>
+            </p>
+            <p class="caption">
+              Опубліковано: 15 січня, 2017 | Приблизний час на прочитання <i class="fa fa-clock-o" aria-hidden="true"></i> 3 хв
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Your content here -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>Lorem Ipsum</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+
+
+    </div>
+
+  </div>
+
+<div class="">
+  <div class="col-sm-12 buttons">
+    <div class="btn-group" role="group">
+      <button type="button" onclick="changeText(0)" class="btn btn-default active" id="kyiv">Київ</button>
+      <button type="button" onclick="changeText(1)" class="btn btn-default" id="kharkiv">Харків</button>
+      <button type="button" onclick="changeText(2)" class="btn btn-default" id="dnipro">Дніпро</button>
+      <button type="button" onclick="changeText(3)" class="btn btn-default" id="odesa">Одеса</button>
+      <button type="button" onclick="changeText(4)" class="btn btn-default" id="lviv">Львів</button>
+  </div>
+
+  <div id="map"> </div>
+
+
+  <form class="form-inline" id="form" onsubmit="postToGoogle()">
+    <p style="margin-bottom:0px;"><b>Знаєте місце, де продають алкоголь без ліцензії? Надішліть нам адресу!</b></p>
+    <div class="form-group">
+      <label for="name">Назва</label>
+      <input type="text" class="form-control" id="name" placeholder="Кафе Ластівка">
+    </div>
+    <div class="form-group">
+      <label for="address">Адреса</label>
+      <input type="text" class="form-control" id="address" placeholder="Київ, вулиця Втрачених Сподівань, 3.14">
+    </div>
+    <button id="submit" type="submit" class="btn btn-default">Надіслати адресу</button>
+    </form>
+</div>
+</div>
+
+    <br style="margin-bottom:50px;">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>Що робити із нелегальними точками продажу алкоголю?</h4>
+      <p class="start">
+        1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p class="start">
+        2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p class="start">
+        3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p class="start">
+        4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row" style="width:100%; margin:auto;">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="col-sm-12" style="text-align:center">
+            <h4><b>Всі матеріали, що стосуються алкогольних ліцензій</b></h4>
+        </div>
+        <div class="col-sm-4 read-more">
+            <a target="_blank" href="http://texty.org.ua/d/alcohol/"><img src="img/alco.png" class="img-responsive" alt=""></a>
+        </div>
+
+        <div class="col-sm-4 read-more">
+             <a target="_blank" href="http://texty.org.ua/d/bolehiv/"><img src="img/bolehiv.png" class="img-responsive" alt=""></a>
+         </div>
+
+        <div class="col-sm-4 read-more">
+             <a target="_blank" href="http://texty.org.ua/d/cherkasy/"><img src="img/cherkasy.png" class="img-responsive" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="width:100%; margin:auto;">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="col-sm-12" style="text-align:center">
+        </div>
+        <div class="col-sm-4 read-more">
+            <a target="_blank" href="http://texty.org.ua/d/gp/"><img src="img/gp.png" class="img-responsive" alt=""></a>
+        </div>
+
+        <div class="col-sm-4 read-more">
+             <a target="_blank" href="http://texty.org.ua/d/berdiansk/"><img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=%D0%91%D0%B5%D1%80%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA&w=755&h=358" class="img-responsive" alt="Гра на основі декларацій українських чиновників"></a>
+         </div>
+
+        <div class="col-sm-4 read-more">
+             <a target="_blank" href="http://texty.org.ua/d/novomoskovsk/"><img src="img/novomoskovsk.png" class="img-responsive" alt="Церква свідків Медведчука"></a>
+        </div>
+    </div>
+</div>
+
+<br style="padding-bottom:50px;">
+
+<!-- Footer-->
+<footer id="footer" class="container-fluid">
+  <div id="footer-wraper" class="row wraper">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="copyright">
+                <p class="p1">&copy; 2016, Тексти.org.ua</p>
+                <p class="p2">Медія для розумних</p>
+            </div>
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <ul class="links">
+                    <li><a href="http://texty.org.ua/mod/article/index.php?ed=1">Вибір редакції</a>
+                        <a href="http://texty.org.ua/mod/article/?view=rss&amp;ed=1">(RSS)</a>
+                    </li>
+                    <li><a href="http://texty.org.ua/mod/video/">Відео</a>
+                        <a href="http://texty.org.ua/mod/video/?view=rss">(RSS)</a>
+                    </li>
+                    <li><a href="http://texty.org.ua/mod/article/">Статті</a>
+                        <a href="http://texty.org.ua/mod/article/?view=rss">(RSS)</a>
+                    </li>
+                    <li><a href="http://texty.org.ua/mod/news/">Новини</a>
+                        <a href="http://texty.org.ua/mod/news/?view=rss">(RSS)</a>
+                    </li>
+                    <li><a href="http://texty.org.ua/mod/blog/everyone.php">Блоги</a>
+                        <a href="http://texty.org.ua/mod/blog/blog_list.php?view=rss">(RSS)</a>
+                    </li>
+                </ul>
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <ul class="links">
+                    <li>
+                        <a href="http://texty.org.ua/mod/archive/tag.php?tag=%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D1%96%D1%8F">Концепції</a>
+                    </li>
+                    <li>
+                        <a href="http://texty.org.ua/mod/archive/tag.php?tag=%D1%80%D0%B5%D1%84%D0%BE%D1%80%D0%BC%D0%B8">Реформи</a>
+                    </li>
+                    <li><a href="http://texty.org.ua/mod/archive/tag.php?tag=%D0%B4%D0%BE%D1%81%D0%B2%D1%96%D0%B4">Важливий досвід</a></li>
+                    <li><a href="http://texty.org.ua/mod/archive/tag.php?tag=%D1%96%D0%BD%D0%BE%D0%B7%D0%BC%D1%96">Найцікавіше з інозмі</a></li>
+                    <li><a href="http://texty.org.ua/pg/blog/infoviz">Журналістика даних</a></li>
+            </ul>
+     </div>
+       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <ul class="links">
+                    <li><a href="http://facebook.com/texty.org.ua">Ми у Фейсбуці</a></li>
+                    <li><a href="http://twitter.com/textyorgua">Ми у Твітері</a></li>
+                    <li><a href="http://texty.org.ua/pg/pages/view/22">Про нас</a></li>
+                    <li><a href="http://texty.org.ua/mod/archive/">Архів</a></li>
+            </ul>
+     </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="copying-info">
+            Матеріали ТЕКСТИ.org.ua можна поширювати згідно ліцензії Creative Commons з обов’язковим посиланням.
+            Велике прохання ставити гіперпосилання в першому чи другому абзаці вашого матеріалу.
+        </div>
+     </div>
+
+
+  </div>
+</footer>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Leaflet -->
+<script src="js/leaflet.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/share-behavior.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+                $('#form').submit(function() {
+                    postToGoogle();
+                    return false;
+                });
+              });
+
+</script>
+
+<script type="text/javascript">
+
+$("#submit").click(function (e) {
+  e.preventDefault();
+  postToGoogle();
+});
+</script>
+
+
+<!--  Google analytics -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18136548-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+
+</html>

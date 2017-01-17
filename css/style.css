@@ -1,0 +1,183 @@
+body {
+  width:100%;
+  margin: auto;
+}
+
+.row {
+  width: 50%;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.firstScreen {
+  height:100%;
+  width:100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  /*background-color: rgba(0, 0, 0, 0.7);*/
+  margin:auto;
+  margin-bottom:30px;
+}
+
+.header {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding:20px;
+  /*color: white;*/
+  filter: none !important;
+  /*background-color: rgba(225, 225, 225, .75);*/
+}
+
+.social-icons{
+  padding-top: 5px;
+  position: fixed;
+  z-index: 1000;
+}
+
+
+.fa-twitter, .fa-facebook{
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: lightgray;
+  margin-bottom: 2px;
+}
+
+.caption {
+  font-size: 1em;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn, .btn.active {
+  margin: 10px;
+  border: solid 1px black;
+  border-radius: 0;
+}
+
+.btn.active {
+  font-weight: bold;
+}
+
+#map {
+  height:700px;
+  width:90%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+.info {
+  height: 680px;
+  width:200px;
+  z-index: 1000;
+  background-color: white;
+  text-align: left;
+  font-size: 8px;
+  padding: 10px;
+}
+
+.info p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 1px;
+}
+
+.form-group {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+.legend {
+  background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0;
+  padding: 10px;
+  text-align: left;
+}
+
+img {
+  margin-bottom: 5px;
+}
+
+p.start::first-letter {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0px;
+  padding: 5px;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*media queries*/
+
+@media (max-width:544px) {
+  .row {
+    width: 100%;
+    margin: auto;
+  }
+
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #map {
+    height:450px;
+  }
+
+}
+
+@media (max-width:768px) {
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 2px;
+  }
+
+  #map {
+    height:500px;
+  }
+
+}
+
+@media (max-width:992px) {
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #map {
+    height:500px;
+  }
+
+
+}
