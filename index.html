@@ -6,45 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Де придбати алкоголь у Києві, Харкові, Дніпрі, Одесі, Львові">
-    <meta name="author" content="Андрій Газін">
+    <meta name="author" content="Андрій Газін, Роман Кульчинський">
 
     <title>Алкогольна карта</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Base CSS for header and footer-->
     <link href="css/template-style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <!-- OpenGraph Meta Tags -->
     <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Алкогольна карта" />
     <meta property="og:image" content="http://texty.org.ua/d/logo.png" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Карта ліцензій на продаж алкоголю у Києві, Харкові, Дніпрі, Одесі та Львові" />
     <meta property="og:url" content="http://texty.org.ua/d/alcomap/" />
 
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:site" content="@textyorgua" />
     <meta property="twitter:account_id" content="49572937" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://texty.org.ua/d/alcomap/" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:title" content="Алкогольна карта" />
+    <meta name="twitter:description" content="Карта ліцензій на продаж алкоголю у Києві, Харкові, Дніпрі, Одесі та Львові" />
     <meta name="twitter:image:src" content="http://texty.org.ua/d/logo.png" />
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
-
-    <!-- Other Meta Tags -->
-    <meta name="title" content="">
-    <meta name="description" content="">
 
 </head>
 <body>
@@ -75,14 +65,15 @@
               Над проектом працював: <b>Андрій Газін</b>
             </p>
             <p class="caption">
-              Опубліковано: 15 січня, 2017 | Приблизний час на прочитання <i class="fa fa-clock-o" aria-hidden="true"></i> 3 хв
+              Опубліковано: 23 січня, 2017 | Приблизний час на прочитання <i class="fa fa-clock-o" aria-hidden="true"></i> 4 хв
             </p>
           </div>
         </div>
       </div>
 </div>
 
-<!-- Your content here -->
+<!-- article -->
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
@@ -96,11 +87,11 @@
       </p>
     </div>
 
-
-
     </div>
 
   </div>
+
+<!-- buttons and map -->
 
 <div class="">
   <div class="col-sm-12 buttons">
@@ -115,27 +106,32 @@
   <div id="map"> </div>
 
 
+<!-- form -->
+
   <form class="form-inline" id="form" onsubmit="postToGoogle()">
     <p style="margin-bottom:0px;"><b>Знаєте місце, де продають алкоголь без ліцензії? Надішліть нам адресу!</b></p>
     <div class="form-group">
       <label for="name">Назва</label>
-      <input type="text" class="form-control" id="name" placeholder="Кафе Ластівка">
+      <input type="text" class="form-control" id="name" placeholder="кафе Ластівка">
     </div>
     <div class="form-group">
       <label for="address">Адреса</label>
-      <input type="text" class="form-control" id="address" placeholder="Київ, вулиця Втрачених Сподівань, 3.14">
+      <input type="text" class="form-control" id="address" placeholder="вулиця ">
     </div>
     <button id="submit" type="submit" class="btn btn-default">Надіслати адресу</button>
     </form>
 </div>
 </div>
 
-    <br style="margin-bottom:50px;">
+
+<br style="margin-bottom:50px;">
+
+<!-- instruction -->
 
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h4>Що робити із нелегальними точками продажу алкоголю?</h4>
+      <h4>Як використовувати цю карту?</h4>
       <p class="start">
         1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
@@ -156,6 +152,8 @@
   </div>
 
 </div>
+
+<!-- links -->
 
 <div class="row" style="width:100%; margin:auto;">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
@@ -185,7 +183,7 @@
         </div>
 
         <div class="col-sm-4 read-more">
-             <a target="_blank" href="http://texty.org.ua/d/berdiansk/"><img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=%D0%91%D0%B5%D1%80%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA&w=755&h=358" class="img-responsive" alt="Гра на основі декларацій українських чиновників"></a>
+             <a target="_blank" href="http://texty.org.ua/d/berdiansk/"><img src="img/berdiansk.png" class="img-responsive" alt="Гра на основі декларацій українських чиновників"></a>
          </div>
 
         <div class="col-sm-4 read-more">
@@ -196,7 +194,7 @@
 
 <br style="padding-bottom:50px;">
 
-<!-- Footer-->
+<!-- footer -->
 <footer id="footer" class="container-fluid">
   <div id="footer-wraper" class="row wraper">
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -256,11 +254,12 @@
   </div>
 </footer>
 
+<!-- scripts -->
+
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Leaflet -->
 <script src="js/leaflet.js"></script>
 <script src="js/maps.js"></script>
 <script src="js/share-behavior.js"></script>
@@ -284,8 +283,6 @@ $("#submit").click(function (e) {
 });
 </script>
 
-
-<!--  Google analytics -->
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18136548-1']);
