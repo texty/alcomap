@@ -167,7 +167,7 @@ info.onAdd = function(map) {
 
   var div = L.DomUtil.create('div', 'info hidden-xs hidden-sm');
 
-  div.innerHTML += '<h4 id ="city">Київ</h4> <p id="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> <hr> <p>Населення: <b id="population">2.91</b> млн осіб</p> <p>Кількість ліцензій: <b id="licenses"> 7247</b></p> <p>Ліцензій на 100 тис. населення: <b id="percapita"> 249.2</b></p> <hr> <p><i class="fa fa-circle" aria-hidden="true" style="color:#d3c756; margin-right:5px"> </i> супермаркети </p> <p><i class="fa fa-circle" aria-hidden="true" style="color:#A80858; margin-right:5px";> </i> місця з ліцензією </p><br>';
+  div.innerHTML += '<h4 id ="city">Київ</h4> <p id="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> <hr> <p>Населення: <b id="population">2.91</b> млн осіб</p> <p>Кількість ліцензій: <b id="licenses"> 7247</b></p> <p>Ліцензій на 100 тис. населення: <b id="percapita"> 249.2</b></p> <hr>';
 
 return div;
 };
@@ -175,14 +175,14 @@ return div;
 map.addControl(info);
 
 //add legend for small screens
-var legend = L.control({position: 'bottomleft'});
-
-legend.onAdd = function (map) {
-    var div = L.DomUtil.create('div', 'legend hidden-lg hidden-md');
-
-        div.innerHTML += '<i class="fa fa-circle" aria-hidden="true" style="color:#d3c756; margin-right:5px"> </i> супермаркети <br><i class="fa fa-circle" aria-hidden="true" style="color:#327C8C; margin-right:5px";> </i> місця з ліцензією';
-
-    return div;
-    };
-
-map.addControl(legend);
+// var legend = L.control({position: 'bottomleft'});
+//
+// legend.onAdd = function (map) {
+//     var div = L.DomUtil.create('div', 'legend hidden-lg hidden-md');
+//
+//         div.innerHTML += '<i class="fa fa-circle" aria-hidden="true" style="color:#d3c756; margin-right:5px"> </i> супермаркети <br><i class="fa fa-circle" aria-hidden="true" style="color:#327C8C; margin-right:5px";> </i> місця з ліцензією';
+//
+//     return div;
+//     };
+//
+// map.addControl(legend);
