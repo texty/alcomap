@@ -208,11 +208,15 @@ map.on('moveend', function() {
 
     changeText(0);
 
+    loadKyiv();
+
   } else if (kharkiv.contains(center)) {
 
     $('.btn-group .btn#kharkiv').addClass('active').siblings().removeClass('active');
 
     changeText(1);
+
+    loadKharkiv();
 
   } else if (dnipro.contains(center)) {
 
@@ -220,17 +224,23 @@ map.on('moveend', function() {
 
     changeText(2);
 
+    loadDnipro();
+
   } else if (odesa.contains(center)) {
 
     $('.btn-group .btn#odesa').addClass('active').siblings().removeClass('active');
 
     changeText(3);
 
+    loadOdesa();
+
   } else if (lviv.contains(center)) {
 
     $('.btn-group .btn#lviv').addClass('active').siblings().removeClass('active');
 
     changeText(4);
+
+    loadLviv();
 
   }
 
