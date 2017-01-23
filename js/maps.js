@@ -24,12 +24,12 @@ $('#kyiv').on('click', function (e) { map.flyTo(L.latLng(50.4501, 30.5234), 12);
 $('#kharkiv').on('click', function (e) { map.flyTo(L.latLng(49.9935, 36.2304), 12);})
 $('#dnipro').on('click', function (e) { map.flyTo(L.latLng(48.4647, 35.0462), 12); })
 $('#odesa').on('click', function (e) { map.flyTo(L.latLng(46.460454, 30.704336), 13);})
-$('#lviv').on('click', function (e) { map.flyTo(L.latLng(49.8397, 24.0297), 13);})
+$('#lviv').on('click', function (e) { map.flyTo(L.latLng(49.8397, 24.0297), 14);})
 
-//set active button
+//set active button, set bounds for current city
 $('.btn-group .btn').click( function() {
 $(this).addClass('active').siblings().removeClass('active');
-  });
+});
 
 function style(feature) {
   return {
@@ -186,8 +186,56 @@ map.addControl(info);
 var search = new L.Control.OSMGeocoder({
         collapsed: false,
         position: 'topright',
-        text: 'Шукати!',
+        text: 'Шукати!'
       });
+
+// change active button and panel on search results
+
+map.on('moveend', function() {
+
+  var center = map.getCenter();
+
+  var kyiv = L.latLngBounds(L.latLng(50.2193, 30.0000), L.latLng(50.6319, 30.8296));
+  var kharkiv = L.latLngBounds(L.latLng(49.8891, 36.0661), L.latLng(50.0670, 36.4302));
+  var dnipro = L.latLngBounds(L.latLng(48.3338, 34.8508), L.latLng(48.5880, 35.2137));
+  var odesa = L.latLngBounds(L.latLng(46.3616, 30.5991), L.latLng(46.5769, 30.8081));
+  var lviv = L.latLngBounds(L.latLng(49.7813 , 23.9246), L.latLng(49.8975, 24.1388));
+
+
+  if (kyiv.contains(center)) {
+
+    $('.btn-group .btn#kyiv').addClass('active').siblings().removeClass('active');
+
+    changeText(0);
+
+  } else if (kharkiv.contains(center)) {
+
+    $('.btn-group .btn#kharkiv').addClass('active').siblings().removeClass('active');
+
+    changeText(1);
+
+  } else if (dnipro.contains(center)) {
+
+    $('.btn-group .btn#dnipro').addClass('active').siblings().removeClass('active');
+
+    changeText(2);
+
+  } else if (odesa.contains(center)) {
+
+    $('.btn-group .btn#odesa').addClass('active').siblings().removeClass('active');
+
+    changeText(3);
+
+  } else if (lviv.contains(center)) {
+
+    $('.btn-group .btn#lviv').addClass('active').siblings().removeClass('active');
+
+    changeText(4);
+
+  }
+
+});
+
 
 map.addControl(search);
 

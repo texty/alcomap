@@ -70,7 +70,7 @@ L.Control.OSMGeocoder = L.Control.extend({
 
 		return container;
 	},
-    
+
     /* helper functions for cordinate extraction */
     _createSearchResult : function(lat, lon) {
         //creates an position description similar to the result of a Nominatim search
