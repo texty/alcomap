@@ -1,6 +1,6 @@
 //initialize map
 var map = L.map('map', {scrollWheelZoom:false}).setView([50.4501, 30.5234], 13);
-            map.zoomControl.setPosition('topright')
+
 
 // add base map
 var CartoDB_PositronNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
@@ -8,6 +8,15 @@ var CartoDB_PositronNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/lig
         subdomains: 'abcd',
         maxZoom: 17
       }).addTo(map);
+
+
+var Stamen_TonerLabels = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
+          attribution: '<a href="http://stamen.com">Stamen Design</a>',
+          subdomains: 'abcd',
+          minZoom: 15,
+          maxZoom: 17,
+          ext: 'png'
+        }).addTo(map);
 
 
 //fly to city of choice
@@ -174,15 +183,12 @@ return div;
 
 map.addControl(info);
 
-//add legend for small screens
-// var legend = L.control({position: 'bottomleft'});
-//
-// legend.onAdd = function (map) {
-//     var div = L.DomUtil.create('div', 'legend hidden-lg hidden-md');
-//
-//         div.innerHTML += '<i class="fa fa-circle" aria-hidden="true" style="color:#d3c756; margin-right:5px"> </i> супермаркети <br><i class="fa fa-circle" aria-hidden="true" style="color:#327C8C; margin-right:5px";> </i> місця з ліцензією';
-//
-//     return div;
-//     };
-//
-// map.addControl(legend);
+var search = new L.Control.OSMGeocoder({
+        collapsed: false,
+        position: 'topright',
+        text: 'Шукати!',
+      });
+
+map.addControl(search);
+
+map.zoomControl.setPosition('topright')

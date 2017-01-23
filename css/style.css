@@ -129,6 +129,18 @@ hr {
   margin-bottom: 5px;
 }
 
+.leaflet-control-geocoder{
+  border-radius: 3px;
+}
+
+input[type='submit'], input[type='text'] {
+  font-size: 0.9em;
+  padding: 5px;
+  margin: 2.5px;
+  border: solid 1px black;
+  border-radius: 3px;
+}
+
 /*media queries*/
 
 @media (max-width:544px) {
