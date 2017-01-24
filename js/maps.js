@@ -6,7 +6,7 @@ var map = L.map('map', {scrollWheelZoom:false}).setView([50.4501, 30.5234], 13);
 var CartoDB_PositronNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="http://cartodb.com/attributions">CARTO</a>',
         subdomains: 'abcd',
-        maxZoom: 17
+        maxZoom: 16
       }).addTo(map);
 
 
@@ -14,7 +14,7 @@ var Stamen_TonerLabels = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/t
           attribution: '<a href="http://stamen.com">Stamen Design</a>',
           subdomains: 'abcd',
           minZoom: 15,
-          maxZoom: 17,
+          maxZoom: 16,
           ext: 'png'
         }).addTo(map);
 
@@ -38,7 +38,7 @@ function style(feature) {
     color: '#FEFFEA',
     weight: 1,
     opacity: 1,
-    fillOpacity: 0.7
+    fillOpacity: 0.6
     };
   }
 
@@ -78,6 +78,8 @@ function style(feature) {
    });
 
   kharkivBtn.removeEventListener("click", loadKharkiv);
+
+  loadKharkiv = function(){};
  }
 
 //dnipro
@@ -101,6 +103,9 @@ function style(feature) {
    });
 
   dniproBtn.removeEventListener("click", loadDnipro);
+
+  loadDnipro = function(){};
+
  }
 
 //odesa
@@ -124,6 +129,9 @@ function style(feature) {
    });
 
   odesaBtn.removeEventListener("click", loadOdesa);
+
+  loadOdesa = function(){};
+
  }
 
 //lviv
@@ -147,6 +155,8 @@ function style(feature) {
    });
 
   lvivBtn.removeEventListener("click", loadLviv);
+
+  loadLviv = function(){};
  }
 
 
@@ -207,8 +217,6 @@ map.on('moveend', function() {
     $('.btn-group .btn#kyiv').addClass('active').siblings().removeClass('active');
 
     changeText(0);
-
-    loadKyiv();
 
   } else if (kharkiv.contains(center)) {
 
