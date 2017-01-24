@@ -141,6 +141,7 @@ input[type='submit'], input[type='text'] {
   border-radius: 1.5px;
 }
 
+
 /*media queries*/
 
 @media (max-width:544px) {
