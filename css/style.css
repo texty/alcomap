@@ -31,14 +31,22 @@ h1 {
   margin-bottom: 15%;
   padding:20px;
   /*color: white;*/
+  text-align: center;
   filter: none !important;
-  /*background-color: rgba(225, 225, 225, .75);*/
+  /*background-color: rgba(225, 225, 225, .4);*/
 }
 
 .social-icons{
   padding-top: 5px;
   position: fixed;
   z-index: 1000;
+}
+
+.colored {
+  background-color: #A80858;
+  color: white;
+  padding: 2px;
+  line-height: normal;
 }
 
 
