@@ -74,10 +74,6 @@ figcaption {
   padding-left: 50px;
 }
 
-figcaption span.colored {
-  background-color: #9b3c6c;
-  /*color:#383e47;*/
-}
 
 .buttons {
   text-align: center;
@@ -165,6 +161,11 @@ input[type='submit'], input[type='text'] {
   margin: 2.5px;
   border: solid 1px black;
   border-radius: 1.5px;
+}
+
+#success {
+  visibility: hidden;
+  color: #9b3c6c;
 }
 
 

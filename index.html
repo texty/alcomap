@@ -96,7 +96,7 @@
   <div>
       <figure class="figure">
         <img class="img-responsive" src="img/01.jpg" style="margin-bottom:20px;">
-        <figcaption><span class="colored">Адміністрація супермаркету «Білла» даремно 20 хвилин намагається знайти чинну ліцензію на продаж алкоголю.</span></figcaption>
+        <figcaption><span class="colored">Адміністрація супермаркету «Білла» даремно 20 хвилин намагається знайти чинну ліцензію на продаж алкоголю</span></figcaption>
       </figure>
 </div>
 
@@ -292,6 +292,7 @@
       <input type="text" class="form-control" id="address" placeholder="вулиця Декомунізована">
     </div>
     <button id="submit" type="submit" class="btn btn-default">Надіслати адресу</button>
+    <i class="fa fa-check fa-2x" id="success" aria-hidden="true"></i>
     </form>
 </div>
 </div>
@@ -453,6 +454,7 @@ $(document).ready(function(){
                 $('#form').submit(function() {
                     postToGoogle();
                     return false;
+
                 });
               });
 
@@ -463,6 +465,7 @@ $(document).ready(function(){
 $("#submit").click(function (e) {
   e.preventDefault();
   postToGoogle();
+  $('#success').css('visibility', 'visible');
 });
 </script>
 
