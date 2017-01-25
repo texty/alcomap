@@ -1,5 +1,5 @@
 //initialize map
-var map = L.map('map', {scrollWheelZoom:false}).setView([50.4501, 30.5234], 13);
+var map = L.map('map', {scrollWheelZoom:false, preferCanvas:true}).setView([50.4501, 30.5234], 13);
 
 
 // add base map
