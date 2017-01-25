@@ -193,10 +193,15 @@ return div;
 
 map.addControl(info);
 
+var southWest = L.latLng(44.390411, 22.128811),
+    northEast = L.latLng(52.375359, 40.218079),
+    bounds = L.latLngBounds(southWest, northEast);
+
 var search = new L.Control.OSMGeocoder({
         collapsed: false,
         position: 'topright',
-        text: 'Шукати!'
+        text: 'Шукати!',
+        bounds: bounds
       });
 
 // change active button and panel on search results

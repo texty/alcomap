@@ -41,6 +41,7 @@ L.Control.OSMGeocoder = L.Control.extend({
 
 		var input = this._input = document.createElement('input');
 		input.type = "text";
+		input.placeholder = "Місто, вулиця";
 
 		var submit = document.createElement('input');
 		submit.type = "submit";
